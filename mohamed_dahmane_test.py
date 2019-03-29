@@ -6,7 +6,22 @@ def test_overlap():
     line1 = overlap.setLineCoordinates(2,7)
 
     line2 = overlap.setLineCoordinates(5,17)
+    
     result = overlap.checkLinesOverlap(line1,line2)
+
+  
+
+    line1 = overlap.getLineCoordinates("Please Enter the vlaue of  ",1)
+
+    line2 = overlap.getLineCoordinates("Please Enter the vlaue of  ",3)
+
+    result = overlap.checkLinesOverlap(line1,line2)
+
+    if result :
+      print("These two lines are overlap")
+    else:
+      print("These two lines aren't overlap")
+
 
 def test_versions():
 
@@ -29,8 +44,8 @@ def test_versions():
   check.standardVersion(4.2,4.2)
 
 
-test_overlap()
-
-print("----------------")
 
 test_versions()
+print("----------------")
+test_overlap()
+
